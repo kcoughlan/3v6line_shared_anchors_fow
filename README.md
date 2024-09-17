@@ -1,6 +1,6 @@
 # 3-line and 6-line shared anchor systems in deep water: OpenFAST model
 
-This repository contains OpenFAST v3.3.0 inputs files for 3-line and 6-line shared anchor systems using the IEA 15 MW reference turbine on the VolturnUS semisubmersible platform. The original input files are based on the repository found here:https://github.com/IEAWindTask37/IEA-15-240-RWT
+This repository contains OpenFAST v3.3.0 input files for 3-line and 6-line shared anchor systems using the IEA 15 MW reference turbine on the VolturnUS semisubmersible platform. While the mooring designs and thus MoorDyn files are unique, the other input files are based on the repository found here:https://github.com/IEAWindTask37/IEA-15-240-RWT
 
 The OpenFAST input files are found in the input_files directory. Within this folder, they are organized into:
 * 3line: files for the 3-line system specifically
@@ -9,7 +9,7 @@ The OpenFAST input files are found in the input_files directory. Within this fol
 
 Within the 3line and 6line folders, subfolders exist for a 0deg analysis and a WWC analysis. Each folder contains subfolders for three IEC design load cases: DLC 1.6, DLC 6.1, and SLC. 
 
-The results folder contains Matlab .mat files of the mooring lines and anchor loads for both 0deg and sweep. 
+The results folder contains Matlab .mat files of the mooring line and anchor loads for both 0deg and sweep. 
 
 Please reference the following for detailed information on the design and analysis of these systems:
 * Coughlan, K. (2024). Mooring systems for floating offshore wind: Mooring design, biocolonisation, and shared anchors [PhD]. University of Massachusetts Amherst.
