@@ -1,0 +1,36 @@
+MoorDyn Waves and Currents input file
+...any notes here...
+--------------------------- WAVES -------------------------------------
+0                    WaveKinMod  - type of wave input {0 no waves; 3 set up grid of wave data based on time series} 
+""       WaveKinFile - file containing wave elevation time series at 0,0,0
+0.04                  dtWave      - time step to use in setting up wave kinematics grid (s)
+0                    WaveDir     - wave heading (deg)
+1    - X wave input type (0: not used; 1: list values in ascending order; 2: uniform specified by -xlim, xlim, num)
+-10, 0, 10    - X wave grid point data
+1    - Y wave input type (0: not used; 1: list values in ascending order; 2: uniform specified by -xlim, xlim, num)
+0    - Y wave grid point data
+1    - Z wave input type (0: not used; 1: list values in ascending order; 2: uniform specified by -xlim, xlim, num)
+-100, -60, -40, -30, -20, -10, -5, 0  - Z wave grid point data
+--------------------------- CURRENT -------------------------------------
+1                    CurrentMod  - type of current input {0 no current; 1 steady current profile described below} 
+z-depth     x-current      y-current
+(m)           (m/s)         (m/s)
+0 1.1085125168440815 0.6399999999999999
+0 0.8400446416709055 0.48499999999999993
+0 0.7361215932167728 0.42499999999999993
+0 0.649519052838329 0.37499999999999994
+0 0.5888972745734183 0.33999999999999997
+0 0.536935750346352 0.30999999999999994
+0 0.4849742261192857 0.27999999999999997
+0 0.4416729559300637 0.25499999999999995
+0 0.4070319397786862 0.23499999999999996
+0 0.37239092362730863 0.21499999999999997
+0 0.3464101615137755 0.19999999999999998
+0 0.23382685902179848 0.13499999999999998
+0 0.18186533479473213 0.10499999999999998
+0 0.16454482671904336 0.09499999999999999
+0 0.13856406460551018 0.07999999999999999
+0 0.13856406460551018 0.07999999999999999
+0 0.1299038105676658 0.07499999999999998
+0 0.11258330249197704 0.06499999999999999
+--------------------- need this line ------------------ 

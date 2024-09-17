@@ -1,0 +1,36 @@
+MoorDyn Waves and Currents input file
+...any notes here...
+--------------------------- WAVES -------------------------------------
+0                    WaveKinMod  - type of wave input {0 no waves; 3 set up grid of wave data based on time series} 
+""       WaveKinFile - file containing wave elevation time series at 0,0,0
+0.04                  dtWave      - time step to use in setting up wave kinematics grid (s)
+0                    WaveDir     - wave heading (deg)
+1    - X wave input type (0: not used; 1: list values in ascending order; 2: uniform specified by -xlim, xlim, num)
+-10, 0, 10    - X wave grid point data
+1    - Y wave input type (0: not used; 1: list values in ascending order; 2: uniform specified by -xlim, xlim, num)
+0    - Y wave grid point data
+1    - Z wave input type (0: not used; 1: list values in ascending order; 2: uniform specified by -xlim, xlim, num)
+-100, -60, -40, -30, -20, -10, -5, 0  - Z wave grid point data
+--------------------------- CURRENT -------------------------------------
+1                    CurrentMod  - type of current input {0 no current; 1 steady current profile described below} 
+z-depth     x-current      y-current
+(m)           (m/s)         (m/s)
+0 -0.4600000000000004 -0.7967433714816834
+0 -0.3500000000000003 -0.6062177826491069
+0 -0.30500000000000027 -0.5282754963085075
+0 -0.3500000000000003 -0.6062177826491069
+0 -0.27000000000000024 -0.4676537180435968
+0 -0.24500000000000022 -0.42435244785437487
+0 -0.2200000000000002 -0.38105117766515295
+0 -0.20000000000000018 -0.3464101615137754
+0 -0.18500000000000016 -0.32042939940024223
+0 -0.17000000000000015 -0.2944486372867091
+0 -0.15500000000000014 -0.26846787517317594
+0 -0.14500000000000013 -0.25114736709748714
+0 -0.09500000000000008 -0.1645448267190433
+0 -0.07500000000000007 -0.12990381056766576
+0 -0.07000000000000006 -0.1212435565298214
+0 -0.06000000000000005 -0.10392304845413261
+0 -0.06000000000000005 -0.10392304845413261
+0 -0.05500000000000005 -0.09526279441628824
+--------------------- need this line ------------------ 

@@ -1,0 +1,36 @@
+MoorDyn Waves and Currents input file
+...any notes here...
+--------------------------- WAVES -------------------------------------
+0                    WaveKinMod  - type of wave input {0 no waves; 3 set up grid of wave data based on time series} 
+""       WaveKinFile - file containing wave elevation time series at 0,0,0
+0.04                  dtWave      - time step to use in setting up wave kinematics grid (s)
+0                    WaveDir     - wave heading (deg)
+1    - X wave input type (0: not used; 1: list values in ascending order; 2: uniform specified by -xlim, xlim, num)
+-10, 0, 10    - X wave grid point data
+1    - Y wave input type (0: not used; 1: list values in ascending order; 2: uniform specified by -xlim, xlim, num)
+0    - Y wave grid point data
+1    - Z wave input type (0: not used; 1: list values in ascending order; 2: uniform specified by -xlim, xlim, num)
+-100, -60, -40, -30, -20, -10, -5, 0  - Z wave grid point data
+--------------------------- CURRENT -------------------------------------
+1                    CurrentMod  - type of current input {0 no current; 1 steady current profile described below} 
+z-depth     x-current      y-current
+(m)           (m/s)         (m/s)
+0 -2.737085596094334e-16 -1.49
+0 -2.0757763245547634e-16 -1.13
+0 -1.8186004967338193e-16 -0.99
+0 -1.616533774874506e-16 -0.88
+0 -1.4512064569896134e-16 -0.79
+0 -1.3226185430791412e-16 -0.72
+0 -1.1940306291686693e-16 -0.65
+0 -1.0838124172454074e-16 -0.59
+0 -9.919639073093561e-17 -0.54
+0 -9.368548013477251e-17 -0.51
+0 -8.450062914116737e-17 -0.46
+0 -5.878304635907295e-17 -0.32
+0 -4.592425496802574e-17 -0.25
+0 -4.041334437186265e-17 -0.22
+0 -3.490243377569956e-17 -0.19
+0 -3.490243377569956e-17 -0.19
+0 -3.1228493378257505e-17 -0.17
+0 -2.7554552980815445e-17 -0.15
+--------------------- need this line ------------------ 

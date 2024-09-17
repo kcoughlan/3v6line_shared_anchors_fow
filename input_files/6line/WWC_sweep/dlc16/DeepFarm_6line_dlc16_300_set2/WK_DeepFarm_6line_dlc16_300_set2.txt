@@ -1,0 +1,36 @@
+MoorDyn Waves and Currents input file
+...any notes here...
+--------------------------- WAVES -------------------------------------
+0                    WaveKinMod  - type of wave input {0 no waves; 3 set up grid of wave data based on time series} 
+""       WaveKinFile - file containing wave elevation time series at 0,0,0
+0.04                  dtWave      - time step to use in setting up wave kinematics grid (s)
+0                    WaveDir     - wave heading (deg)
+1    - X wave input type (0: not used; 1: list values in ascending order; 2: uniform specified by -xlim, xlim, num)
+-10, 0, 10    - X wave grid point data
+1    - Y wave input type (0: not used; 1: list values in ascending order; 2: uniform specified by -xlim, xlim, num)
+0    - Y wave grid point data
+1    - Z wave input type (0: not used; 1: list values in ascending order; 2: uniform specified by -xlim, xlim, num)
+-100, -60, -40, -30, -20, -10, -5, 0  - Z wave grid point data
+--------------------------- CURRENT -------------------------------------
+1                    CurrentMod  - type of current input {0 no current; 1 steady current profile described below} 
+z-depth     x-current      y-current
+(m)           (m/s)         (m/s)
+0 0.46000000000000013 -0.7967433714816835
+0 0.35000000000000003 -0.606217782649107
+0 0.30500000000000005 -0.5282754963085076
+0 0.35000000000000003 -0.606217782649107
+0 0.2700000000000001 -0.4676537180435969
+0 0.24500000000000005 -0.4243524478543749
+0 0.22000000000000006 -0.381051177665153
+0 0.20000000000000007 -0.34641016151377546
+0 0.18500000000000003 -0.3204293994002423
+0 0.17000000000000004 -0.29444863728670917
+0 0.15500000000000003 -0.26846787517317594
+0 0.14500000000000002 -0.2511473670974872
+0 0.09500000000000003 -0.16454482671904333
+0 0.07500000000000001 -0.12990381056766578
+0 0.07000000000000002 -0.12124355652982141
+0 0.06000000000000001 -0.10392304845413262
+0 0.06000000000000001 -0.10392304845413262
+0 0.055000000000000014 -0.09526279441628825
+--------------------- need this line ------------------ 
